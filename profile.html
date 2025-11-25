@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>档案卡 · 广州 Coffee Chat</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              sand: '#f4efe7',
+              terracotta: '#ce6a5a',
+              midnight: '#1c1a2d',
+              blush: '#f7dfcf',
+            },
+            fontFamily: { sans: ['"Nunito"', '"PingFang SC"', 'Inter', 'sans-serif'] },
+          },
+        },
+      };
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles/custom.css" />
+  </head>
+  <body class="bg-sand">
+    <div class="iphone-shell">
+      <header class="flex items-center justify-between mb-4 text-slate-700">
+        <button class="w-9 h-9 rounded-full bg-white shadow flex items-center justify-center">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <p class="text-sm">灵魂档案</p>
+        <button class="w-9 h-9 rounded-full bg-white shadow flex items-center justify-center text-terracotta">
+          <i class="fa-solid fa-thumbs-up"></i>
+        </button>
+      </header>
+
+      <section class="bg-white rounded-3xl p-4 shadow mb-4">
+        <div class="flex gap-4">
+          <img
+            src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=300&q=80"
+            alt="profile"
+            class="w-24 h-24 rounded-2xl object-cover"
+          />
+          <div class="flex-1">
+            <div class="flex items-start justify-between">
+              <div>
+                <p class="text-xl font-semibold">Lena Quan</p>
+                <p class="text-xs text-slate-400 mt-1">广州 · 天河 · 1.2km</p>
+              </div>
+              <span class="px-2 py-1 text-xs rounded-full bg-slate-900 text-white">可信度 92%</span>
+            </div>
+            <div class="flex gap-2 mt-3 text-xs">
+              <span class="status-tag bg-blush text-terracotta">交互设计</span>
+              <span class="status-tag bg-slate-900 text-white">AI 产品</span>
+            </div>
+          </div>
+        </div>
+        <p class="text-sm text-slate-600 mt-4 leading-relaxed">
+          正在休假充电，喜欢在 K11 小众咖啡馆写稿。关注「AI × 设计伦理」，希望找到愿意一起探讨行业趋势的伙伴。
+        </p>
+      </section>
+
+      <section class="bg-white rounded-3xl p-4 shadow mb-4">
+        <div class="flex items-center justify-between mb-3">
+          <p class="text-sm font-semibold text-slate-600">灵魂档案</p>
+          <button class="text-xs text-terracotta">展开全部</button>
+        </div>
+        <div class="grid grid-cols-2 gap-3 text-xs text-slate-500">
+          <div class="p-3 rounded-2xl bg-sand">
+            <p class="uppercase text-[10px] tracking-wide text-slate-400">当前关注</p>
+            <p class="text-sm text-slate-800 mt-2">跳槽 & 新行业</p>
+          </div>
+          <div class="p-3 rounded-2xl bg-sand">
+            <p class="uppercase text-[10px] tracking-wide text-slate-400">咖啡因</p>
+            <p class="text-sm text-slate-800 mt-2">Dirty · OAT</p>
+          </div>
+          <div class="p-3 rounded-2xl bg-sand">
+            <p class="uppercase text-[10px] tracking-wide text-slate-400">周末地标</p>
+            <p class="text-sm text-slate-800 mt-2">珠江新城 · C10</p>
+          </div>
+          <div class="p-3 rounded-2xl bg-sand">
+            <p class="uppercase text-[10px] tracking-wide text-slate-400">灵感来源</p>
+            <p class="text-sm text-slate-800 mt-2">Supersense 播客</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-white rounded-3xl p-4 shadow mb-4 space-y-3">
+        <div class="flex items-center justify-between">
+          <p class="text-sm font-semibold text-slate-600">想聊的话题</p>
+          <span class="text-xs text-slate-400">Mood score · 87</span>
+        </div>
+        <div class="space-y-2 text-sm">
+          <div class="flex justify-between">
+            <p>#职业方向</p>
+            <span class="text-slate-400">🔥 热度 92</span>
+          </div>
+          <p class="text-slate-500">
+            “和我分享你在 AI 产品里的小实验，我请你喝 Dirty！”
+          </p>
+          <div class="flex justify-between pt-2 border-t border-dashed border-slate-100">
+            <p>#广州美食地图</p>
+            <span class="text-slate-400">☕ 推荐 14</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-slate-900 rounded-3xl text-white p-4 shadow">
+        <div class="flex items-center justify-between">
+          <div>
+            <p class="text-sm text-white/70">最佳对话时段</p>
+            <p class="text-lg font-semibold">今晚 19:30 — 21:00</p>
+          </div>
+          <div class="text-right">
+            <p class="text-xs text-white/70">建议地点</p>
+            <p class="font-medium">天环 · LOKAL</p>
+          </div>
+        </div>
+        <div class="mt-4 grid grid-cols-2 gap-3">
+          <button class="w-full py-3 rounded-2xl bg-white text-slate-900 text-sm font-medium">
+            <i class="fa-regular fa-message mr-2"></i>打开对话
+          </button>
+          <button class="w-full py-3 rounded-2xl bg-terracotta text-white text-sm font-medium">
+            <i class="fa-solid fa-mug-hot mr-2"></i>预约咖啡
+          </button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
+

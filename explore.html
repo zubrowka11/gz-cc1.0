@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>探索模式 · 广州 Coffee Chat</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              sand: '#f4efe7',
+              terracotta: '#ce6a5a',
+              midnight: '#1c1a2d',
+              blush: '#f6d5c3',
+            },
+            fontFamily: { sans: ['"Nunito"', '"PingFang SC"', 'Inter', 'sans-serif'] },
+          },
+        },
+      };
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles/custom.css" />
+  </head>
+  <body class="bg-sand">
+    <div class="iphone-shell flex flex-col">
+      <header class="flex items-center gap-3 mb-6">
+        <button class="w-10 h-10 rounded-full bg-white shadow flex items-center justify-center text-slate-600">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <div class="flex-1">
+          <p class="text-xs text-slate-500 uppercase tracking-wide">探索模式</p>
+          <p class="font-semibold text-lg text-slate-800">选择你的探索方向</p>
+        </div>
+      </header>
+
+      <main class="flex-1 space-y-4 overflow-y-auto">
+        <!-- 职业灵感 -->
+        <article class="bg-white rounded-3xl p-5 shadow cursor-pointer hover:shadow-lg transition">
+          <div class="flex items-start gap-4">
+            <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center text-white text-xl">
+              <i class="fa-solid fa-briefcase"></i>
+            </div>
+            <div class="flex-1">
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="font-semibold text-lg text-slate-800">职业灵感</h3>
+                <span class="text-xs text-slate-400 bg-slate-50 px-2 py-1 rounded-full">12 人在线</span>
+              </div>
+              <p class="text-sm text-slate-600 leading-relaxed mb-3">
+                与不同行业的伙伴交流职业规划、转型思考、行业洞察，寻找职业发展的新可能。
+              </p>
+              <div class="flex flex-wrap gap-2 text-xs">
+                <span class="px-3 py-1 rounded-full bg-amber-50 text-amber-700">职业转型</span>
+                <span class="px-3 py-1 rounded-full bg-amber-50 text-amber-700">行业洞察</span>
+                <span class="px-3 py-1 rounded-full bg-amber-50 text-amber-700">技能提升</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 同好交流 -->
+        <article class="bg-white rounded-3xl p-5 shadow cursor-pointer hover:shadow-lg transition">
+          <div class="flex items-start gap-4">
+            <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-emerald-400 to-teal-500 flex items-center justify-center text-white text-xl">
+              <i class="fa-solid fa-users"></i>
+            </div>
+            <div class="flex-1">
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="font-semibold text-lg text-slate-800">同好交流</h3>
+                <span class="text-xs text-slate-400 bg-slate-50 px-2 py-1 rounded-full">28 人在线</span>
+              </div>
+              <p class="text-sm text-slate-600 leading-relaxed mb-3">
+                找到志趣相投的伙伴，分享兴趣爱好、生活方式、城市探索，建立真实的社交连接。
+              </p>
+              <div class="flex flex-wrap gap-2 text-xs">
+                <span class="px-3 py-1 rounded-full bg-emerald-50 text-emerald-700">兴趣爱好</span>
+                <span class="px-3 py-1 rounded-full bg-emerald-50 text-emerald-700">生活方式</span>
+                <span class="px-3 py-1 rounded-full bg-emerald-50 text-emerald-700">城市探索</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 学习对话 -->
+        <article class="bg-white rounded-3xl p-5 shadow cursor-pointer hover:shadow-lg transition">
+          <div class="flex items-start gap-4">
+            <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-indigo-400 to-purple-500 flex items-center justify-center text-white text-xl">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div class="flex-1">
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="font-semibold text-lg text-slate-800">学习对话</h3>
+                <span class="text-xs text-slate-400 bg-slate-50 px-2 py-1 rounded-full">19 人在线</span>
+              </div>
+              <p class="text-sm text-slate-600 leading-relaxed mb-3">
+                围绕知识分享、技能学习、思维碰撞展开深度对话，在交流中共同成长。
+              </p>
+              <div class="flex flex-wrap gap-2 text-xs">
+                <span class="px-3 py-1 rounded-full bg-indigo-50 text-indigo-700">知识分享</span>
+                <span class="px-3 py-1 rounded-full bg-indigo-50 text-indigo-700">技能学习</span>
+                <span class="px-3 py-1 rounded-full bg-indigo-50 text-indigo-700">思维碰撞</span>
+              </div>
+            </div>
+          </div>
+        </article>
+      </main>
+
+    </div>
+  </body>
+</html>
+

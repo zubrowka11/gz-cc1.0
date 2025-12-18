@@ -1,5 +1,6 @@
-广州 Coffee Chat 原型说明
+StudySpot APP
 ========================
+StudySpot APP 的主要创新点
+基于深度用户研究和对华南理工大学学生自习行为的洞察，StudySpot APP 的创新点主要体现在从传统信息工具向智能学习伙伴的范式转变。
 
-本仓库包含广州 Coffee Chat（品牌别称「伴途 · GZ Spark」）的 9 张高保真原型界面。通过 `index.html` 可一次性预览所有页面（iframe 方式呈现 3×3 排布），方便导出到 Figma 进行二次设计。
 
